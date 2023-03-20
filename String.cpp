@@ -1,22 +1,4 @@
-//
-//#include <stdio.h>
-//#include<string.h>
-//#include<ctype.h>
-//int main()
-//{   char a[100];
-//    gets(a);
-//    int n=strlen(a);
-//    for(int i=0;i<n;i++){
-//        char c= tolower(a[i]);
-//        printf("%c",c);
-//		}
-//    
-//    return 0;
-//}
-
-
-
-
+//Reverse the number without an array
 #include<iostream>
 using namespace std;
 
@@ -30,4 +12,30 @@ int main() {
 	}
 	cout<<sum;
 	  return 0;
+}
+
+
+
+// Capital letter into small letter using ASCII difference
+//  ASCII diffrence is 32 b/w capital and small letter.  
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char a[100];
+    gets(a);
+    int n=strlen(a);
+	
+    for(int i=0;i<n;i++){
+    	int c;  
+        if(65<=a[i]&&a[i]<=90){
+        c=a[i]+32;
+	}
+	else{
+	c=a[i];
+	}
+	    
+        printf("%c",c);
+    }
+    
+    return 0;
 }
